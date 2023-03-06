@@ -60,30 +60,67 @@
   bottom: -25px;
   width: 100%;
   max-width: 1024px;
-
 }
 
 .headerIcon {
   color: lightgray;
 }
 
-.headerSearchItem{
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+}
+
+.options {
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionsItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionsCounter{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 12px;
+    color: black;
 }
 
-.headerSearchInput{
-    border: none;
-    outline: none;
-}
-
-.headerSearchText{
-    color: lightgray;
+.optionsCounterButton{
+    width: 30px;
+    height: 30px;
+    border:1px solid #0071c2;
+    color: #0071c2;
     cursor: pointer;
+    background-color: white;
 }
 
-.date{
-    position: absolute;
-    top: 50px;
+.optionsCounterButton:disabled {
+    cursor: not-allowed;
 }
